@@ -1,25 +1,38 @@
-# Avataar_Assignment_HB1 - Dissecting Image Generation
+# Visionary Depths | Dissecting Image Generation
 # Stable Diffusion Image Generation Pipeline with ControlNet
 
 
 ## Overview
-This project is a structured evaluation and review of controlled image generation with Stable Diffusion guided by ControlNet. Metadata comes in the form of text prompts and depth maps to be converted into descriptive images with photorealism. We experiment with different types of conditioning with the object of benchmarking the quality of the generated images at varying aspect ratios.
+Visionary Depths is a comprehensive evaluation of controlled image generation utilizing Stable Diffusion and guided by ControlNet. This project leverages metadata, including text prompts and depth maps, to create descriptive and photorealistic images. Through rigorous experimentation with various conditioning techniques, we benchmark the quality of generated images across different aspect ratios, providing insights into the efficacy of these methods.
+
+
+## Objectives
+1. To generate high-quality images from text prompts and depth maps.
+2. To explore the impact of different aspect ratios on image quality.
+3. To analyze and optimize generation latency for improved efficiency.
 
 
 ## Tasks and Deliverables
 
 ### Task 1: Generate Best-Quality Images
-Using the metadata provided, images were generated using Stable Diffusion with ControlNet. Several conditioning techniques were applied to improve image quality, including combining depth maps with canny and normal maps where applicable.
+Utilized Stable Diffusion combined with ControlNet to generate images based on the provided metadata. Employed conditioning techniques such as integrating depth maps with Canny edges and normal maps to enhance visual fidelity.
 
 ### Task 2: Generate Images at Different Aspect Ratios
-We tested different aspect ratios (1:1, 16:9, 4:3, and 9:16) and analyzed the image quality, comparing results with the default 1:1 ratio optimized for Stable Diffusion.
+Tested image generation across multiple aspect ratios: 1:1, 16:9, 4:3, and 9:16. Compared the quality of images generated at these ratios against the standard 1:1 aspect ratio, evaluating how changes in dimensions affect the overall output.
 
 ### Task 3: Analyze Generation Latency
-The generation latency was recorded and optimized using techniques such as reducing inference steps and enabling memory-efficient attention. The effects on latency and quality were evaluated.
+Measured the time taken for image generation under various configurations. Implemented strategies such as reducing inference steps and enabling memory-efficient attention to decrease latency. Discussed the trade-offs between latency reduction and image quality preservation.
 
 
-## Running the Code
+## Running the Project Locally
 
 **Clone the repository**:
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
+git clone https://github.com/username/repo-name.git
+cd repo-name
+
+**Installing Required Dependencies**:
+pip install -r requirements.txt
+
+**Running the Image Generation Pipeline**:
+python main_script.py
+
